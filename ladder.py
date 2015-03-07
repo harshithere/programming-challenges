@@ -8,5 +8,8 @@ values = raw_input().split(' ')
 heigth = int(values[0])
 angle = int(values[1])
 
-angle = math.radians(angle)  #Convert angle into radians
-print int(round((height/math.sin(angle))))
+try:
+  angle = math.radians(angle)  #Convert angle into radians
+  print int(math.ceil(heigth/math.sin(angle)))
+except:
+  print 'It is not possible for zero angle'
