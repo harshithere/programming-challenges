@@ -1,3 +1,5 @@
+'''Function to check for a number bomb( three consecutive pairs of integers) in an integer array '''
+
 def  contains_bomb( arr):
     counter = 0    # Net checker to see if 3 pairs are reached 
     count = 1      # Counting instances of each integer
