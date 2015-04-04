@@ -16,7 +16,7 @@ def isprime(num):
 print "Enter a number to check"
 num = int(raw_input())
 result = isprime(num)
-if result == False:
-  print 'Number is not prime'
-else:
+if result:
   print 'Number is prime'
+else:
+  print 'Number is not prime'
